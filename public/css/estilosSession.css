@@ -1,0 +1,65 @@
+body{
+		
+		width: 100%;
+		height: 100%;
+		background: url('/_Phalcon/CheckIngBUAP/img/calle1.jpg') center fixed no-repeat;
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+	
+
+	
+}
+
+
+
+#padre1{ 
+         margin-top: 100px;
+         margin-bottom: 100px;
+
+    	 min-height: 500px;
+    	 max-width: 1000px;
+    	 width: 80%;
+        opacity:0.9; /* Opacidad % */
+        background-color: #033C5A;
+        
+        border: 1px solid #000000;
+		border-width: 1px 1px 1px;
+        border-radius: 3px;
+}
+
+#hijo1{
+		height: 500px;
+        background-color: #ffffff;
+        color: #ffffff;
+
+        
+
+}
+
+#hijo2{
+		height: 500px;
+        background-color: #ffffff;
+
+        border-width: 0px 0px 0px 1px;
+        border-style: solid;
+        border-color: #bdbdbd ;
+        border-radius: 0px;
+
+}
+
+#logo_1{
+	background-color: #033C5A;
+	display: flex;
+	align-items: center;
+
+	
+}
+#img_lector2{
+	background-color: #ffffff;
+}
+
+#footer1{
+	
+        border-radius: 10px;
+}

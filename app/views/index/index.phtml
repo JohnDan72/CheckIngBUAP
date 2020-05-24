@@ -1,0 +1,88 @@
+ <?php echo $this->getContent();
+	echo \Phalcon\Tag::stylesheetLink("css/estilosSession.css");
+?>
+
+	<div class="row" id="padre1">
+		<div class="col s12 m6" id="hijo1">
+			<div class="row" id="logo_1">
+				<div class="col s12 m3" align="left">
+					<img src="https://www.buap.mx/sites/all/themes/nuevo_sitio/css/img/escudo_blanco.png" >
+				</div>
+				<div class="col s12 m9" align="center">
+					<h5>CheckIng - BUAP</h5>
+				</div>
+			</div>
+			<div class="row" id="centro1">
+				<div class="col s12" align="center" style="color: #424242   ">
+					<h5>Chequeo de Votantes de Ingenierías</h5>
+				</div>
+			</div>
+			
+			<div class="row" id="footer1">
+				<div class="col s12" align="center" id="img_lector2">
+					<img src="https://image.flaticon.com/icons/svg/1601/1601109.svg" style="max-height: 250px;" align="center">
+				</div>
+			</div>
+		</div>
+
+		<div class="col s12 m6" id="hijo2">
+			<div class="col s12 m12" align="center">
+				<h4>Inicio de Sesión</h4>
+				<div class="divider"></div>
+				<br>
+				<h6 style="color: #616161 ">Llene los campos correspondientes para iniciar sesión en CheckIng</h6>
+				<br>
+			</div>
+
+			<?php echo $this->tag->form('index/login');?>
+			<div class="row">
+				<div class=" col s12 m8 offset-m2 input-field">
+					<?php echo $this->tag->textField([
+													'Identificador',
+													"onkeypress" => "return checar(event)",
+													'value'=>'',
+													'required'  => 'required'
+													]);?>
+					<label for="Identificador">Identificador</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="input-field col s12 m8 offset-m2 ">
+					<?php echo $this->tag->passwordField([
+													'Password',
+													'value'=>'',
+													'required'  => 'required'
+													]);?>
+					<label for="Password">Contraseña</label>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col s12 m6 offset-m3" align="center">
+					<button class="btn waves-effect waves-light  light-blue darken-4" type="submit" name="action">Iniciar sesión
+					   <i class="material-icons right">send</i>
+					</button>
+				</div>
+				<?php
+			      if (isset($session_error)) {
+			        ?>
+			        <div class="col s12 m12" align="center">
+			        	<span class="helper-text" style="color:red;">
+				          <?php echo $session_error; ?>
+				        </span>
+			        </div>
+			        
+			      <?php
+			    }
+			    ?>
+				
+			</div>
+
+			
+		</div>
+	</div>
+
+	
+
+<!--https://us.123rf.com/450wm/pandavector/pandavector1605/pandavector160500019/56155912-stock-vector-scanner-flat-icon-illustration-for-web-and-mobile-.jpg?ver=6-->

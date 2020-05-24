@@ -1,0 +1,26 @@
+<!-- TEMPLATE HEADER DE VISTA PRINCIPAL-->
+<div class="navbar-fixed">
+	<nav style="background-color: #033C5A; height: 65px;">
+	  <div class="nav-wrapper">
+	  	
+	  		<a href="" class="brand-logo left">
+                <img class="responsive-img" src="https://www.buap.mx/sites/all/themes/nuevo_sitio/css/img/escudo_blanco.png" id="logo1">
+            </a>
+			
+			<a href="" class="brand-logo center">
+                CheckIng-BUAP
+            </a>
+			
+			
+			<a href="<?php echo $this->url->get('table/index')?>" target="_blank" class="brand-logo right">
+				<i class="material-icons">web</i>
+			</a>
+			  	
+	        
+	  </div>
+	</nav>
+</div>
+
+
+<?php echo $this->flash->output();?>
+<?php echo $this->getContent();?>

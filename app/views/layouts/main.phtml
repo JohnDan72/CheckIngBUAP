@@ -1,0 +1,32 @@
+<!-- TEMPLATE HEADER DE VISTA PRINCIPAL-->
+<div class="navbar-fixed">
+	<nav style="background-color: #033C5A; height: 65px;">
+	  <div class="nav-wrapper">
+	  	
+	  		<a href="<?php echo $this->url->get('index/index')?>" class="brand-logo left">
+                <img class="responsive-img" src="https://www.buap.mx/sites/all/themes/nuevo_sitio/css/img/escudo_blanco.png" id="logo1">
+            </a>
+			
+			<a href="#!" class="brand-logo center">
+                CheckIng-BUAP
+            </a>
+			
+			<ul class="right">
+			  <li>
+				<?php
+		        echo $this->tag->linkTo("Table/index", "<button class=\"waves-effect waves-light btn\" style=\"background: #033C5A;color: #ffffff\">Historial</button>");
+		        ?>
+	          </li>
+			  <li>
+				<?php
+		        echo $this->tag->linkTo("gestion/logout", "<button class=\"waves-effect waves-light btn\" style=\"background-color: #d32f2f\">Salir</button>");
+		        ?>
+	          </li>
+	        </ul>
+	  </div>
+	</nav>
+</div>
+
+
+<?php echo $this->flash->output();?>
+<?php echo $this->getContent();?>

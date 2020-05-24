@@ -1,0 +1,66 @@
+
+.slider{
+    max-height: 350px !important;
+}
+.slides{
+    height: 300px !important;
+}
+.tabs .tab a{
+        color:#757575 ;
+        background-color: #fafafa;
+    } /*Black color to the text*/
+
+.tabs .tab a:hover {
+    background-color:#eeeeee;
+    color:#757575 ;
+} /*Text color on hover*/
+
+.tabs .tab a.active {
+    background-color:#033C5A;
+    color:#212121  ;
+} /*Background and text color when a tab is active*/
+
+.tabs .indicator {
+    background-color:#0d47a1  ;
+} /*Color of underline*/
+
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+    background-color: #bbdefb;
+    outline: none;
+}
+
+/* label focus color */
+ .input-field input:focus + label {
+   color: #000 !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid #0d47a1 !important;
+   box-shadow: 0 1px 0 0 #0d47a1 !important
+ }
+ .slider .indicators .indicator-item.active {
+        background-color: #0d47a1;
+}
+
+
+
+#FotoUsuario{
+   
+}
+.SizeText{
+    font-size: 30px;
+}
+#BotonEntrada{
+    color: #ffffff;
+    background-color: #033C5A;
+}
+#BotonCancelar{
+    color: #ffffff;
+    background-color: #d32f2f;
+}
+.BicicletaInvitado{
+    background-image: url(../img/bici.jpg);
+    background-position: center;
+    background-size: 90%
+}
+
